@@ -64,7 +64,7 @@ namespace NETConsole
                         case "Y":
                             Console.WriteLine("Enter third number to subtract:");
                             thirdSubNum = Int32.Parse(Console.ReadLine());
-                            calculateSubtraction = firstSubNum + secondSubNum + thirdSubNum;
+                            calculateSubtraction = firstSubNum - secondSubNum - thirdSubNum;
                             Console.WriteLine("Calculating operation: {0} - {1} - {2}:\nANSWER: {3}\n", firstSubNum, secondSubNum, thirdSubNum, calculateSubtraction);
                             break;
                         case "N":
@@ -90,11 +90,11 @@ namespace NETConsole
                         case "Y":
                             Console.WriteLine("Enter third number to multiply:");
                             thirdMultNum = Int32.Parse(Console.ReadLine());
-                            calculateMultiplication = firstMultNum + secondMultNum + thirdMultNum;
+                            calculateMultiplication = firstMultNum * secondMultNum * thirdMultNum;
                             Console.WriteLine("Calculating operation: {0} x {1} x {2}:\nANSWER: {3}\n", firstMultNum, secondMultNum, thirdMultNum, calculateMultiplication);
                             break;
                         case "N":
-                            calculateMultiplication = firstMultNum - secondMultNum;
+                            calculateMultiplication = firstMultNum * secondMultNum;
                             Console.WriteLine("Calculating operation: {0} x {1}:\nANSWER: {2}\n", firstMultNum, secondMultNum, calculateMultiplication);
                             break;
                         default:
@@ -109,7 +109,7 @@ namespace NETConsole
                     var firstDivNum = Int32.Parse(Console.ReadLine());
                     Console.WriteLine("Enter second number to divide:");
                     var secondDivNum = Int32.Parse(Console.ReadLine());
-                    calculateDivision = firstDivNum - secondDivNum;
+                    calculateDivision = firstDivNum / secondDivNum;
                     Console.WriteLine("Calculating operation: {0} x {1}:\nANSWER: {2}\n", firstDivNum, secondDivNum, calculateDivision);
                 }
                 else if (operation == 5)
