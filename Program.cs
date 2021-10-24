@@ -14,7 +14,7 @@ namespace NETConsole
             var name = Console.ReadLine();
             Console.WriteLine("Welcome, {0}", name);
 
-            int operation = 0;
+            int operation;
             do
             {
                 Console.WriteLine("Select type of operation:\n" +
@@ -27,8 +27,7 @@ namespace NETConsole
                 operation = Int32.Parse(Console.ReadLine());
                 if (operation == 1)
                 {
-                    int thirdAddNum, calculateAddition = 0;
-
+                    int thirdAddNum, calculateAddition;
                     Console.WriteLine("Enter first number to add:");
                     var firstAddNum = Int32.Parse(Console.ReadLine());
                     Console.WriteLine("Enter second number to add:");
@@ -53,7 +52,7 @@ namespace NETConsole
                     }
                 } else if (operation == 2)
                 {
-                    int thirdSubNum, calculateSubtraction = 0;
+                    int thirdSubNum, calculateSubtraction;
 
                     Console.WriteLine("Enter first number to subtract:");
                     var firstSubNum = Int32.Parse(Console.ReadLine());
